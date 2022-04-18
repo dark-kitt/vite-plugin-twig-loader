@@ -33,7 +33,8 @@ module.exports = defineConfig(({ command, mode }) => {
 ```js
 /* path/to/App.stories.js */
 import Twig from 'twig';
-
+// Vue App
+// index.js => createApp(App).mount('#app');
 import App from './index.js';
 import AppTwig, { path, ctx, globals, settings } from './App.html.twig';
 
