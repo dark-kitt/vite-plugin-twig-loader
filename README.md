@@ -8,16 +8,18 @@ This plugin is based on the [vite-plugin-twig](https://github.com/fiadone/vite-p
 
 ## Installation
 ```shell
-# no npm available
+yarn add -D vite-plugin-twig-loader
 ```
 
-Currently, only `git clone` is possible.
+```shell
+npm i vite-plugin-twig-loader --save-dev
+```
 
 ## Usage
 
 ```js
 /* vite.config.js */
-const twig = require('./.vite/plugins/vite-plugin-twig-loader');
+const twig = require('vite-plugin-twig-loader');
 
 module.exports = defineConfig(({ command, mode }) => {
   return {
@@ -28,7 +30,7 @@ module.exports = defineConfig(({ command, mode }) => {
 })
 ```
 
-## NOTE: Supports Storybook Stories
+## Storybook Stories Supports
 
 ```js
 /* path/to/App.stories.js */
@@ -86,7 +88,7 @@ ButtonStorie.storyName = 'My Button';
 ```
 
 ### Options
-The plugin can be configured both via the *twig.config.js* file from the project root or by passing a configuration object directly as argument to the function above (in this last case, the configuration file will be ignored).
+The plugin can be configured both via the *twig.config.js* file from the project root or by passing a configuration object directly as argument to the function above.
 
 Here below the list of the supported options.
 
@@ -124,11 +126,3 @@ __type__ `{ [key: string]: any }`
 __default__ `{}`
 
 The *Twig* settings. Please refer to [*twig.js* documentation](https://github.com/twigjs/twig.js/wiki/) to learn more.
-
-
-### Templates
-The *html* files located by default in the *Vite* project root are not intented to be replaced directly by the *twig* ones as the normal page files resolution/linking on the *Vite*'s dev server is wanted to be preserved along with the build logic. However, those files are supposed to contain a json definition instead of the traditional markup, which should be moved on the *twig* side.
-
-More in details, a *html* file should be empty.
-
-Where `template` is the path of the *twig* template to be rendered (relative to the *cwd*), and `data` is the local context for that page (eventually merged with the *globals* provided via plugin options).
