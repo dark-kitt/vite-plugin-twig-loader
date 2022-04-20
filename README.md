@@ -1,8 +1,6 @@
 # vite-plugin-twig-loader
 
-[Vite](https://github.com/vitejs/vite) plugin for [Twig](https://github.com/twigjs/twig.js/).
-
-This plugin is based on the [vite-plugin-twig](https://github.com/fiadone/vite-plugin-twig) plugin.
+[Vite](https://github.com/vitejs/vite) plugin for [Twig](https://github.com/twigjs/twig.js/). This plugin is based on the [vite-plugin-twig](https://github.com/fiadone/vite-plugin-twig) plugin.
 
 ---
 
