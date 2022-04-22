@@ -28,7 +28,7 @@ module.exports = defineConfig(({ command, mode }) => {
 })
 ```
 
-## Storybook Stories Supports
+## Storybook example
 
 ```js
 /* path/to/App.stories.js */
