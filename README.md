@@ -1,6 +1,6 @@
 # vite-plugin-twig-loader
 
-[Vite](https://github.com/vitejs/vite) plugin for [Twig](https://github.com/twigjs/twig.js/). This plugin is based on the [vite-plugin-twig](https://github.com/fiadone/vite-plugin-twig) plugin.
+A [Vite](https://github.com/vitejs/vite) plugin to load [Twig](https://github.com/twigjs/twig.js/) files.
 
 ---
 
@@ -28,7 +28,7 @@ module.exports = defineConfig(({ command, mode }) => {
 })
 ```
 
-## Storybook example
+## Usage: Storybook Example
 
 ```js
 /* path/to/App.stories.js */
@@ -88,10 +88,10 @@ ButtonStorie.storyName = 'My Button';
 ### Options
 The plugin can be configured both via the *twig.config.js* file from the project root or by passing a configuration object directly as argument to the function above.
 
-Here below the list of the supported options.
+Below is a list of the supported options.
 
 #### `index`
-__type__ `[key: string]: string`
+__type__ `string`
 
 __default__ `null`
 
@@ -124,3 +124,7 @@ __type__ `{ [key: string]: any }`
 __default__ `{}`
 
 The *Twig* settings. Please refer to [*twig.js* documentation](https://github.com/twigjs/twig.js/wiki/) to learn more.
+
+---
+
+This plugin is based on the [vite-plugin-twig](https://github.com/fiadone/vite-plugin-twig) plugin.
