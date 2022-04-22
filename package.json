@@ -6,5 +6,10 @@
   "repository": "https://github.com/dark-kitt/vite-plugin-twig-loader.git",
   "author": "dark-kitt",
   "license": "CC0 1.0 Universal",
-  "private": false
+  "private": false,
+  "keywords": [
+    "vite",
+    "twig",
+    "loader"
+  ]
 }
