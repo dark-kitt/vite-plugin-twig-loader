@@ -99,7 +99,7 @@ __default__ `null`
 Option to define a file path for the main entry point (e.g. `src/template/index.twig`). *NOTE: the vite index.html file is required.*
 
 #### `filters`
-__type__ `{ [key: string]: (...args: any[]) => any }`
+__type__ `object`
 
 __default__ `{}`
 
