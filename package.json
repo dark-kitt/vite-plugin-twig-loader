@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-twig-loader",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "vite plugin to load twig files",
   "main": "index.js",
   "repository": "https://github.com/dark-kitt/vite-plugin-twig-loader.git",
