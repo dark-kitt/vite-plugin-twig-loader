@@ -28,7 +28,10 @@ module.exports = defineConfig(({ command, mode }) => {
 })
 ```
 
-## Usage: Storybook Example
+### Config
+The plugin can be configured via the *twig.config.js* file from the project root directory or by passing a configuration object directly as an argument to the function above.
+
+## Usage: Storybook
 
 ```js
 /* path/to/App.stories.js */
@@ -86,8 +89,6 @@ ButtonStorie.storyName = 'My Button';
 ```
 
 ### Options
-The plugin can be configured both via the *twig.config.js* file from the project root or by passing a configuration object directly as argument to the function above.
-
 Below is a list of the supported options.
 
 #### `index`
@@ -95,35 +96,35 @@ __type__ `string`
 
 __default__ `null`
 
-Option to define `src/template/index.twig` file. *NOTE: the vite index.html file is required.*
+Option to define a file path for the main entry point (e.g. `src/template/index.twig`). *NOTE: the vite index.html file is required.*
 
 #### `filters`
 __type__ `{ [key: string]: (...args: any[]) => any }`
 
 __default__ `{}`
 
-A collection of custom filters to extend *Twig*. Look at [*twig.js* documentation](https://github.com/twigjs/twig.js/wiki/Extending-twig.js) to learn more.
+A collection of custom filters to extend *Twig*. Take a look at [*twig.js* documentation](https://github.com/twigjs/twig.js/wiki/Extending-twig.js) to learn more.
 
 #### `functions`
-__type__ `{ [key: string]: (...args: any[]) => any }`
+__type__ `object`
 
 __default__ `{}`
 
-A collection of custom functions to extend *Twig*. Look at [*twig.js* documentation](https://github.com/twigjs/twig.js/wiki/Extending-twig.js) to learn more.
+A collection of custom functions to extend *Twig*. Find out more at [*twig.js* documentation](https://github.com/twigjs/twig.js/wiki/Extending-twig.js).
 
 #### `globals`
-__type__ `{ [key: string]: any }`
+__type__ `object`
 
 __default__ `{}`
 
-The global variables to be injected in each template.
+Global variables are injected into each template.
 
 #### `settings`
-__type__ `{ [key: string]: any }`
+__type__ `object`
 
 __default__ `{}`
 
-The *Twig* settings. Please refer to [*twig.js* documentation](https://github.com/twigjs/twig.js/wiki/) to learn more.
+*Twig* settings. Please, take a look at [*twig.js* documentation](https://github.com/twigjs/twig.js/wiki/).
 
 ---
 
